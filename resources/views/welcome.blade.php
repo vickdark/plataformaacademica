@@ -6,7 +6,7 @@
         <div class="bg-primary bg-opacity-10 rounded-4 d-inline-flex align-items-center justify-content-center shadow-sm mb-3" style="width: 70px; height: 70px;">
             <i class="fa-solid fa-rocket text-primary fs-1"></i>
         </div>
-        <h1 class="display-6 fw-bold text-dark">{{ config('app.name', 'plataformaacademica') }}</h1>
+        <h1 class="display-6 fw-bold text-dark">{{ setting('app_name', config('app.name', 'plataformaacademica')) }}</h1>
         <p class="text-muted">Estructura base para proyectos de alto nivel</p>
     </div>
 
@@ -55,7 +55,7 @@
                 ¿Necesitas ayuda para acceder?
             </a>
             <div class="mt-3 text-sidebar-muted" style="font-size: 0.65rem;">
-                &copy; {{ date('Y') }} {{ config('app.name') }} &bull; v1.0.0
+                &copy; {{ date('Y') }} {{ setting('app_name', config('app.name', 'plataformaacademica')) }} &bull; v1.0.0
             </div>
         </div>
     @endif
