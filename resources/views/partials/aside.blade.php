@@ -51,6 +51,50 @@
                     <span class="app-link-text">{{ $module }}</span>
                 </a>
             @endforeach
+
+            <div class="sidebar-divider my-2 border-top border-white border-opacity-10"></div>
+            <div class="px-4 py-2 small text-sidebar-muted fw-bold text-uppercase" style="font-size: 0.65rem;">Plataforma Académica</div>
+
+            <a class="nav-link {{ request()->routeIs('academic.pilares.*') ? 'active' : '' }}" href="{{ route('academic.pilares.index') }}">
+                <i class="fa-solid fa-layer-group"></i>
+                <span class="app-link-text">Pilares y Temas</span>
+            </a>
+            <a class="nav-link {{ request()->routeIs('academic.preguntas.*') ? 'active' : '' }}" href="{{ route('academic.preguntas.index') }}">
+                <i class="fa-solid fa-database"></i>
+                <span class="app-link-text">Banco de Preguntas</span>
+            </a>
+            <a class="nav-link {{ request()->routeIs('academic.estudio.*') ? 'active' : '' }}" href="{{ route('academic.estudio.index') }}">
+                <i class="fa-solid fa-book-open"></i>
+                <span class="app-link-text">Modo Estudio</span>
+            </a>
+            <a class="nav-link {{ request()->routeIs('academic.examen.*') ? 'active' : '' }}" href="{{ route('academic.examen.index') }}">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span class="app-link-text">Modo Examen</span>
+            </a>
+            <a class="nav-link {{ request()->routeIs('academic.estadisticas.*') ? 'active' : '' }}" href="{{ route('academic.estadisticas.index') }}">
+                <i class="fa-solid fa-chart-line"></i>
+                <span class="app-link-text">Estadísticas</span>
+            </a>
+
+            <div class="sidebar-divider my-2 border-top border-white border-opacity-10"></div>
+            <div class="px-4 py-2 small text-sidebar-muted fw-bold text-uppercase" style="font-size: 0.65rem;">Recursos y Soporte</div>
+
+            <a class="nav-link {{ request()->routeIs('academic.biblioteca.*') ? 'active' : '' }}" href="{{ route('academic.biblioteca.index') }}">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <span class="app-link-text">Biblioteca</span>
+            </a>
+            <a class="nav-link {{ request()->routeIs('academic.certificados.*') ? 'active' : '' }}" href="{{ route('academic.certificados.index') }}">
+                <i class="fa-solid fa-award"></i>
+                <span class="app-link-text">Certificados</span>
+            </a>
+            <a class="nav-link {{ request()->routeIs('academic.consultas.*') ? 'active' : '' }}" href="{{ route('academic.consultas.index') }}">
+                <i class="fa-solid fa-comments"></i>
+                <span class="app-link-text">Buzón de Consultas</span>
+            </a>
+            <a class="nav-link {{ request()->routeIs('academic.configuracion.*') ? 'active' : '' }}" href="{{ route('academic.configuracion.index') }}">
+                <i class="fa-solid fa-sliders"></i>
+                <span class="app-link-text">Config. Avanzada</span>
+            </a>
         </nav>
 
         <div class="app-sidebar-footer">
