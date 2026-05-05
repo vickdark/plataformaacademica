@@ -9,7 +9,7 @@
                 <i class="fa-solid {{ setting('app_logo_icon', 'fa-rocket') }} fs-3"></i>
             </div>
         @endif
-        <h1 class="h3 fw-bold text-dark mb-1">{{ setting('app_name', config('app.name', 'Laravel')) }}</h1>
+        <h1 class="h3 fw-bold text-dark mb-1">{{ setting('app_name', config('app.name', 'plataformaacademica')) }}</h1>
         <p class="text-muted small fw-bold text-uppercase" style="letter-spacing: 0.05em;">{{ setting('app_subtitle', 'Administración de Inventario') }}</p>
     </div>
 @endsection

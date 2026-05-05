@@ -9,7 +9,7 @@
                 @endif
             </div>
             <div class="app-brand-info overflow-hidden">
-                <span class="app-brand-text fw-bold text-white fs-5 lh-1 d-block">{{ setting('app_name', config('app.name', 'Laravel')) }}</span>
+                <span class="app-brand-text fw-bold text-white fs-5 lh-1 d-block">{{ setting('app_name', config('app.name', 'plataformaacademica')) }}</span>
                 <span class="text-sidebar-muted fw-medium" style="font-size: 0.65rem; letter-spacing: 0.05em; text-transform: uppercase;">{{ setting('app_subtitle', 'Sistema en laravel') }}</span>
             </div>
         </div>

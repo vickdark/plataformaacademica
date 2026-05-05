@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
         $roles = [
             ['nombre' => 'Administrador', 'slug' => 'admin', 'descripcion' => 'Acceso total al sistema'],
             ['nombre' => 'Supervisor', 'slug' => 'supervisor', 'descripcion' => 'Acceso a gestión básica'],
-            ['nombre' => 'Vendedor', 'slug' => 'vendedor', 'descripcion' => 'Acceso solo a ventas'],
+            ['nombre' => 'Vendedor', 'slug' => 'vendedor', 'descripcion' => 'Acceso solo a la plataforma'],
         ];
 
         foreach ($roles as $roleData) {

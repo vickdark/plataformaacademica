@@ -18,7 +18,7 @@ class ConfiguracionSeeder extends Seeder
             // App settings
             [
                 'key' => 'app_name',
-                'value' => 'Laravel Boilerplate',
+                'value' => 'plataformaacademica',
                 'group' => 'app',
             ],
             [
